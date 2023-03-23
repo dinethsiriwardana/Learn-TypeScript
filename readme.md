@@ -1,7 +1,5 @@
-const hello: "world" - because its const, its type is world
-adter we create a variable We cannot change value to a different type  
-let a = "s";  
-a = 1 X
+This code demonstrates some of the basic features of TypeScript. It defines several custom types using the `type` keyword, including `ID`, `PopularTag`, and `MaybePopularTag`. It also defines an interface, `UesrInterface`, which specifies the shape of a user object with an `id` property of type `ID`, and `name` and `surname` properties of type `string`.
 
+The code also shows how to declare variables with union types, such as `pageName`, which can be either a string or a number. It also shows how to use the `null` and `undefined` types to indicate the absence of a value, such as in the case of the `errorMessage` variable. The `someProp` variable demonstrates how multiple types can be combined using the `|` operator.
 
-let errorMessage: string | null = null;     //ex- Get Data From DB.. First its null
+Finally, the code shows how to define and use arrays of custom types, such as the `PopularTags` array, which contains `PopularTag` values. The `dragonsTag` variable demonstrates how a custom type can be combined with `null` using the `MaybePopularTag` type. This code illustrates how TypeScript can help catch errors at compile time by providing type safety and how it can help make code more readable and maintainable.
