@@ -1,4 +1,2 @@
-const hello: "world" - because its const, its type is world
-adter we create a variable We cannot change value to a different type  
-let a = "s";  
-a = 1 X
+
+This code demonstrates the use of interfaces in TypeScript. The `UserInterface` interface defines a set of properties and methods that a user object should have, including a `name` property of type string, an optional `age` property of type number, and a `getMessage()` method that returns a string. The `user` and `user2` variables demonstrate two different ways of creating user objects. The `user` variable uses a plain JavaScript object with the required `name` and `age` properties, while the `user2` variable uses an object that implements the `UserInterface` interface, including the optional `age` property and the required `getMessage()` method. This code illustrates how interfaces can be used to define the shape of objects in TypeScript and ensure type safety.
