@@ -1,7 +1,5 @@
-const hello: "world" - because its const, its type is world
-adter we create a variable We cannot change value to a different type  
-let a = "s";  
-a = 1 X
+This code demonstrates some of the more advanced type features of TypeScript. It defines several functions with different return types, including `doSomething`, which returns `void`, indicating that it doesn't return a value, and `doSomething1`, which returns `never`, indicating that it never completes normally.
 
+The code also demonstrates the use of the `any` type, which can be used to represent any type, but is not recommended due to its lack of type safety. It introduces the `unknown` type, which is similar to `any`, but requires type assertion before it can be used as a specific type.
 
-let errorMessage: string | null = null;     //ex- Get Data From DB.. First its null
+The code also shows how to perform type assertions, using the `as` keyword, to convert variables from one type to another. Finally, the `numericPageN` variable demonstrates how to convert a string to a number using type assertions, but also warns that this conversion may not be safe due to the lack of overlap between the two types. This code illustrates some of the more advanced type features of TypeScript and how they can be used to improve code safety and readability.
