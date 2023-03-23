@@ -1,7 +1,5 @@
-const hello: "world" - because its const, its type is world
-adter we create a variable We cannot change value to a different type  
-let a = "s";  
-a = 1 X
+This code demonstrates how TypeScript can be used to improve type safety when working with the DOM in the browser. When using `document.querySelector` to retrieve an element, TypeScript will infer the type of the element based on the selector, but it may not always be the correct type. In the first example, `someElement` is inferred as `Element`, which does not have a `value` property. To work around this, we can use a type assertion to tell TypeScript that `someElement` is actually of type `any`, but this is not recommended.
 
+In the second example, `someElement2` is declared as an `HTMLInputElement` using a type assertion, which allows us to access the `value` property without error. This is the preferred method of working with the DOM in TypeScript.
 
-let errorMessage: string | null = null;     //ex- Get Data From DB.. First its null
+The code also demonstrates how to use type assertions in event listeners to avoid type errors. When handling events, the `event` parameter is typically of type `Event`, which does not have a `value` property. By using a type assertion to declare `target` as an `HTMLInputElement`, we can access the `value` property of the element that triggered the event safely.
