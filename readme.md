@@ -1,7 +1,7 @@
 
 # TypeScript Course by freeCodeCamp.org
 
-This repository contains the code and notes for the TypeScript Course by freeCodeCamp.org, which covers the following topics:
+This repository contains the code and notes for the TypeScript Course by `freeCodeCamp.org`, which covers the following topics:
 
 -   Installing TypeScript tools
 -   TypeScript type definitions
@@ -12,6 +12,10 @@ This repository contains the code and notes for the TypeScript Course by freeCod
 -   Creating classes in TypeScript
 -   Understanding generics in TypeScript
 -   Using enums in TypeScript
+
+[![gp5H0Vw39yw-HD](https://user-images.githubusercontent.com/91774218/227112883-b2bf62d5-0d78-4fd7-b413-198568f4c9ab.jpg)](https://www.youtube.com/watch?v=gp5H0Vw39yw)
+
+
 
 <i>`TypeScript` is a superset of `JavaScript `that adds features such as `type annotations, interfaces, classes`, and `modules` to JavaScript. It allows developers to write more maintainable and scalable code with fewer errors, making it popular for large-scale web applications. TypeScript code is transpiled into standard JavaScript, which means it can run on any modern browser or server-side environment that supports JavaScript. It's easy to learn if you're familiar with JavaScript and can greatly improve the quality and efficiency of your code.</i>
 
