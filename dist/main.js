@@ -19,6 +19,7 @@ console.log('someElement2', someElement2.value);
 var listenerElement = document.querySelector('.foo');
 // (parameter) event: Event
 listenerElement.addEventListener('blue', function (event) {
-    // console.log('event',event.target.value) //This is the normal
-    var target = event.target;
+    // console.log('event',event.target.value) //This is the normal method
+    var target = event.target; //but we can declared target as HTMLInputElement
+    console.log('event', target.value);
 });

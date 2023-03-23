@@ -27,9 +27,9 @@ const listenerElement = document.querySelector('.foo');
 // (parameter) event: Event
 listenerElement.addEventListener('blue',(event) => {
 
-    // console.log('event',event.target.value) //This is the normal
+    // console.log('event',event.target.value) //This is the normal method
     
-
-    const target = event.target as HTMLInputElement
+    const target = event.target as HTMLInputElement //but we can declared target as HTMLInputElement
+    console.log('event',target.value) 
 });
 
