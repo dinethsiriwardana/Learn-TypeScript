@@ -2,7 +2,6 @@ interface UserInterface{
     getFullname(): string;
 }
 
-
 class User implements UserInterface{
 
     private firstName:string
@@ -19,12 +18,10 @@ class User implements UserInterface{
     changunchangableName(): void{
         // this.unchangableName = "dineth"
     }
-
     getFullname(): string{
         return this.firstName + " " + this.lastName
     }
 }
-
 class Admin extends User{
 
     private editor: string
@@ -32,13 +29,10 @@ class Admin extends User{
     setEditor(editor: string): void{
         this.editor = editor
     }
-
     getEditor(editor: string): string{
         return this.editor;
     }
-
 }
-
 
 const user = new User("Dineth","Siriwardana");
 
