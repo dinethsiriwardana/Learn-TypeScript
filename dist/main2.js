@@ -1,4 +1,4 @@
-// ? Function addId argument obj to get id
+// ? In main.ts we can pass any data type to addId
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -11,35 +11,27 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 /*
-? If we don't provide argument type - it will be any
 
-const addId = (obj) => {
+Ex:
+
+const addId = <T>(obj: T) => {
     const id  = Math.random().toString(16)
     return {
         ...obj,   //returns a new object
         id
-    }
-}
+    };
+};
+const result = addId<string>('user');
 
-? So we can throw what we want
-const result = addId(user);
-console.log('result',result)
 */
-//? 'T' is a defaultname for generic
-//So we can use it as a data type
-var addId = function (obj) {
+// ? So we need to set the default generic type here
+var addId_2 = function (obj) {
     var id = Math.random().toString(16);
     return __assign(__assign({}, obj), { //returns a new object
         id: id });
 };
-var user = {
+var user_2 = {
     name: 'Jack'
 };
-var result = addId(user);
+var result_2 = addId_2(user);
 console.log('result', result);
-/*
-const addId: <UserInterface>(obj: UserInterface) => UserInterface & {
-    id: string;
-}
-*/
-// ! ----------> main2.ts
