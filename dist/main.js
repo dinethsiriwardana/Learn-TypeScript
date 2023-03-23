@@ -12,4 +12,11 @@ var doSomething1 = function () {
 };
 // unknown
 var vUnknown = "unknown";
-//We can't assignable to any type
+// let v2:string = vUnknown;
+//We can't assign unknown to any type
+// Type Assertion (type Convert)
+var v2 = vUnknown;
+var pageN = "1";
+// Conversion of type 'string' to type 'number' may be a mistake because neither type sufficiently overlaps with the other. 
+// If this was intentional, convert the expression to 'unknown' first
+var numericPageN = pageN;
